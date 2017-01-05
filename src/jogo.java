@@ -4,7 +4,8 @@ import java.util.Scanner;
 public class jogo {
 	 
 	static palavras d = new palavras();
-	static enforcado p = new enforcado(d.randomizeWord());
+	static String palavra = d.randomizeWord();
+	static enforcado p = new enforcado(palavra);
 
 
 	public static void main(String[] args) throws IOException 
@@ -141,6 +142,8 @@ public class jogo {
 					System.out.println("  ##        / \\  ");
 					System.out.println("  ##       /   \\  \n");
 					System.out.println("\nPERDEU!!!\n");
+					System.out.println("\nPALAVRA CERTA: "+palavra);
+
 					System.exit(0);
 					break;
 				}
