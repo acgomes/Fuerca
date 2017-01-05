@@ -44,7 +44,7 @@ public class enforcado
 		char letra = Character.toUpperCase(L);
 		if		(letraR.indexOf(letra)<0 && plvra.indexOf(letra)<0)
 		{
-			incrementer(); //O estado aumenta
+			incrementer();
 			return;
 		}
 		else if (letraR.indexOf(letra)>=0 && plvra.indexOf(letra)<0)
@@ -54,7 +54,6 @@ public class enforcado
 		}
 		else if (letraR.indexOf(letra)<0 && plvra.indexOf(letra)>=0)
 		{
-			
 			letraR+= letra;
 			return;
 		}
