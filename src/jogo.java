@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class jogo {
 	 
-	static palavras d = new palavras();
-	static String palavra = d.randomizeWord();
-	static enforcado p = new enforcado(palavra);
+	static Palavraas d = new Palavraas();
+	static String palavra = d.RandomizeWord();
+	static Enforcado p = new Enforcado(palavra);
 
 
 	public static void main(String[] args) throws IOException 
@@ -13,7 +13,7 @@ public class jogo {
 		Scanner input = new Scanner(System.in);
 		
 	  do{
-		  if(p.verifica() == false ){
+		  if(p.Verifica() == false ){
 			  
 			  //teste
 			  switch (p.getestado())
@@ -157,18 +157,18 @@ public class jogo {
 	  System.out.println("Introduza uma letra: ");
 	  p.receber(input.next().charAt(0));
 	  
-	  System.out.println(p.tamanhodasletras());
+	  System.out.println(p.Tamanhodasletras());
 		  }
 		  else{
 			  System.out.println("PARABÉNS! GANHOU!!!");
 			  break;
 			  
 		  }
-	  }while(p.getestado() < 7 || !p.verifica());
+	  }while(p.getestado() < 7 || !p.Verifica());
 		input.close();
 	}
 	
-	public static void cls (){
+	public static void Cls (){
 		int linha = 0;
 		while (linha <= 50){
 			linha ++ ;

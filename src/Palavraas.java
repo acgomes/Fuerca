@@ -1,8 +1,8 @@
 import java.util.Random;
 
-public class palavras {
+public class Palavraas {
 	
-	String[] palavras=
+	String[] Palavras=
 		{
 				"Portugal","Angola","BMW","Mercedes",
 				"Odacil","Ana","Diogo","Porto","Azul",
@@ -10,11 +10,11 @@ public class palavras {
 		};
 	
 	
-	public String randomizeWord()
+	public String RandomizeWord()
 	{
 		Random aleatorio = new Random();
 
-		return  palavras[aleatorio.nextInt(palavras.length)].toUpperCase();
+		return  Palavras[aleatorio.nextInt(Palavras.length)].toUpperCase();
 	}
 
 }
