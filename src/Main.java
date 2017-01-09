@@ -1,10 +1,10 @@
-public class enforcado 
+public class Main 
 {
 	private String 	plvra				; 	
 	private String 	letraR	; 	
 	private int 	estado				; 	
 
-	public enforcado(String plvra)
+	public Main(String plvra)
 	{
 		//Construtor 
 		this.plvra = plvra;
@@ -12,7 +12,7 @@ public class enforcado
 		this.letraR ="";
 	}
 	
-	public String tamanhodasletras ()
+	public String Tamanhodasletras ()
 	{
 		
 		String output = "";
@@ -32,9 +32,9 @@ public class enforcado
 		return output; 
 	}
 	
-	public boolean verifica() 
+	public boolean Verifica() 
 	{
-		if(this.tamanhodasletras().contains("_")) // caso tenha underscore, vai dar erro
+		if(this.Tamanhodasletras().contains("_")) // caso tenha underscore, vai dar erro
 		{return false; }
 		else{return true;}
 	}

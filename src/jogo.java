@@ -5,7 +5,7 @@ public class jogo {
 	 
 	static Palavraas d = new Palavraas();
 	static String palavra = d.RandomizeWord();
-	static Enforcado p = new Enforcado(palavra);
+	static Main p = new Main(palavra);
 
 
 	public static void main(String[] args) throws IOException 
