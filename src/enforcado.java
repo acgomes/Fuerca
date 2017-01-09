@@ -1,10 +1,10 @@
-public class Enforcado 
+public class enforcado 
 {
 	private String 	plvra				; 	
 	private String 	letraR	; 	
 	private int 	estado				; 	
 
-	public Enforcado(String plvra)
+	public enforcado(String plvra)
 	{
 		//Construtor 
 		this.plvra = plvra;
@@ -12,7 +12,7 @@ public class Enforcado
 		this.letraR ="";
 	}
 	
-	public String Tamanhodasletras ()
+	public String tamanhodasletras ()
 	{
 		
 		String output = "";
@@ -32,9 +32,9 @@ public class Enforcado
 		return output; 
 	}
 	
-	public boolean Verifica() 
+	public boolean verifica() 
 	{
-		if(this.Tamanhodasletras().contains("_")) // caso tenha underscore, vai dar erro
+		if(this.tamanhodasletras().contains("_")) // caso tenha underscore, vai dar erro
 		{return false; }
 		else{return true;}
 	}
@@ -54,7 +54,6 @@ public class Enforcado
 		}
 		else if (letraR.indexOf(letra)<0 && plvra.indexOf(letra)>=0)
 		{
-			
 			letraR+= letra;
 			return;
 		}
@@ -64,12 +63,12 @@ public class Enforcado
 		}
 		else
 		{
-			
+			// Caso tenha algum problema
 			return;
 		}
 		
 	}
-	// GET & SEt's
+	
 	public int getestado()
 	{
 		return this.estado;
